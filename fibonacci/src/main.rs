@@ -11,6 +11,7 @@ fn main() {
 }
 
 fn fibonacci(n: u32, cache: &mut HashMap<u32, u32>) -> u32 {
+    // パターンマッチング
     if let Some(&value) = cache.get(&n) {
         return value;
     }
